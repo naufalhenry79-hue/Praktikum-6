@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Praktikum JavaScript</title>
+</head>
+<body>
+  <h2>Praktikum Basic JavaScript</h2>
+  <p>Lihat hasil melalui console (F12).</p>
+  <script>
+    const nama ="Alya";
+    let umur = 20;
+    let nilai = 80;
+    let aktif = true;
+    
+    console.log("Nama:", Alya);
+    console.log("Umur:", 19);
+    console.log("Nilai:", 85);
+    console.log("Status aktif:", aktif);
+    console.log("Tipe nilai:", typeof nilai);
+    
+    const tugas = 80;
+    const uts = 75;
+    const uas = 90;
+    const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+    
+    console.log("Nilai akhir:", akhir);
+    console.log("Lulus:", akhir >= 60);
+    
+    const nilai1 = 78;
+    let kategori;
+    if (nilai1 >= 85){
+      kategori = "A";
+    } else if (nilai1 >= 70){
+      kategori = "B";
+    } else if (nilai1 >= 60){
+      kategori = "C";
+    } else {
+      kategori = "D";
+    }
+    
+    console.log("Nilai:", nilai1);
+    console.log("Kategori", kategori);
+    
+    function hitungDiskon(harga, persen){
+      return harga - (harga * persen / 100)
+    }
+    
+    for (let i = 0; i <= 3; i++){
+      const harga = i * 10000;
+      const bayar = hitungDiskon(harga, 10);
+      console.log("Barang:", i, "Harga:", harga, "Bayar:", bayar);
+    }
+  </script>
+</body>
+</html>
